@@ -1,0 +1,68 @@
+Big O notation is a mathematical notation that describes the limiting of a function when the argument tends towards a particular value or infinity.
+In computer science, big O notation is used to classify algorithms according to how their time or space requirements grow as the input size grows.
+https://en.wikipedia.org/wiki/Big_O_notation
+
+In this project on Investigating Texts and Calls, we have five tasks. Each of the task is a separate .py file viz Task0.py, Task1.py, Task2.py, Task3.py and Task4.py
+
+Each py file reads two datasets and stores the data into texts and calls.
+
+Since the files are read each time, we will add O(n^2) for the two files. 
+
+Task 0:
+
+What is the first record of texts and what is the last record of calls?
+First record is accessed directly. Last record is also accessed directly. Hence O(1).
+
+Task 1:
+
+How many different telephone numbers are there in the records? 
+The algorithm loops through all records in texts exactly once.
+The algorithm loops through all records in calls exactly once. 
+Hence O(n) + O(n) ~ O(n)
+
+
+Task 2:
+
+Which telephone number spent the longest time on the phone
+during the period?
+
+The algorithm loops thru all records in calls and checks for call duration, storing the values of telephone number, day and call duration in a dictionary. Longest call duration is retrieved using the max function.
+The algorithm is looping exactly once hence O(n).
+
+
+Task 3:
+
+Part A: Find all of the area codes and mobile prefixes called by people
+in Bangalore.
+
+The algorithm loops through all records in calls. It creates a list of 'calling' telephone numbers that are prefixed with (080). While creating the list, the algorithm makes other checks for
+	1. the 'called' telephone numbers if it is prefixed with (080).
+	2. the 'called' telephone numbers if it is mobile
+	3. the 'called' telephone numbers if it is a fixed line. 
+The algorithm does a nested loop. Hence O(n^2).
+
+Part B: What percentage of calls from fixed lines in Bangalore are made
+to fixed lines also in Bangalore?
+The algorithm has already done a nested loop through the records and created a list. It now calculates the percentage of calls, hence O(1).
+
+Overall O(n^2) + O(1) = O(n^2 + 1) = O(n^2)
+
+
+Task 4:
+
+Create a set of possible telemarketers.
+
+We are looking for numbers
+	1. that make outgoing calls 
+	2. never send texts
+	3. never receive texts 
+	4. never receive incoming calls
+
+The algorithm starts the loop with calls. During this loop, the algorithm does a nested loop on calls to check if the number also received incoming call. O(n^2)
+Another loop to texts checks if the number has sent out any text message or received a text message. O(m)
+The resultant list is sorted so O(n log n).
+The sorted list is looped for printing, so O(k)
+There are a total of four loops.
+Hence O(n^2) + O(m) + O(1) + O(k) = O(n^2 + m + k + 1) = O(n^2 + m + k)
+Since the maximum time taken is by O(n^2), hence O(n^2).
+
