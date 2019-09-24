@@ -1,0 +1,5 @@
+Problem_1 explanation:
+An LRU cache is a type of cache in which we remove the least recently used entry when the cache memory reaches its limit.
+
+The algorithm uses hash map to retrieve items in constant time. The get and set functions run in constant time.
+Hence the time complexity is O(1). The algorithm uses doubly linked list, hence the space complexity is O(n) where n is the cache capacity.
