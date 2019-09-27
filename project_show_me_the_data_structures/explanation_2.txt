@@ -1,0 +1,5 @@
+Problem_2 explanation:
+
+This is a recursive function. We are searching for files and if the code encounters a sub-directory, we are searching for files in the sub-directory. The time complexity depends on the depth of sub-directories within the directory structure. As the directory structure gets deeper, the complexity gets higher.
+Since this is a recursive function, the time complexity is O(n^2).
+If the number of files searched is m, then the space complexity is O(m).
