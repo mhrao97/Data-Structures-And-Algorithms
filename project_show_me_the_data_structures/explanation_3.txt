@@ -1,0 +1,16 @@
+Problem_3 explanation:
+
+A Huffman code is a particular type of optimal prefix code that is used for compressing data. 
+
+https://en.wikipedia.org/wiki/Huffman_coding
+
+In the algorithm, 'huffman_encoding' function, uses a dictionary to store frequencies of characters. This dictionary is then sorted by frequencies. The algorithm loops thru the sorted dictionary once. The algorithm then loops through the characters of the input data to build a tree. 
+Thus, if n is the size of the input, the time complexity for encoding is O(n log(n)).
+
+The huffman_decoding function, uses a nested loop. Hence the time complexity for decoding is O(n^2).
+
+The time complexity for this function is O(n^2).
+
+The space complexity is O(n).
+
+
