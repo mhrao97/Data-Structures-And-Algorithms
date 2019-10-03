@@ -1,0 +1,6 @@
+Problem_4 explanation:
+
+In this Active Directory problem, we are trying to determine if a user is in a group. The algorithm first checks if the user is in the group that is passed for checking. If the user is not found in this group, the algorithm checks the sub-groups. This process is done recursively till the group is found. If m is the number of users and n is the number of groups, the time complexity for this algorithm would be O(m * n).
+Since the function call is recursive, the space complexity is also O(m * n).
+https://stackoverflow.com/questions/18686121/differences-between-time-complexity-and-space-complexity
+
