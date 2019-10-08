@@ -1,0 +1,12 @@
+Problem_5 explanation:
+
+A blockchain is a growing list of records, called blocks, which are linked using cryptography.
+https://en.wikipedia.org/wiki/Blockchain
+
+In this Blockchain problem, we are using linked lists and hashing to implement blockchain.
+
+The algorithm has 3 classes, Node, Block and Blockchain.
+Node class contains a block linking to the previous node.
+Block class contains the data, timestamp and BlockChain class comprises of single linked list.
+The function add_block creates a block and puts it in a linked list. It calls Block class. Block class calculates hash. Time complexity for this is O(n). Since hash is calculated, time complexity depends on hash.
+The algorithm uses linked list, hence the space complexity is O(n).
