@@ -1,0 +1,7 @@
+Problem_6 explanation:
+
+Union and Intersection: 
+The algorithm first loops through the passed in linked lists to create union and intersection.
+In order to loop through a linked list, it has to be first converted into an array or a set. This algorithm converts the linked list into a set. It also uses the built-in method of sets to get intersection.
+Since the algorithm is travelling atleast once, the time complexity of the problem is O(n), where n is the size of the linked list.
+The space complexity is O(n).
