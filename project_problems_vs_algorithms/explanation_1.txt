@@ -1,0 +1,14 @@
+explanation for Problem 1:
+
+In this problem, we are finding the square root of a number. The algorithm uses binary search method to find the square root. 
+Binary search is an algorithimic technique in which one tries to reduce the search space in half in the hope of finding the answer quickly.
+The algorithm finds a mid-point for the input number that is passed in and tries to find the square root of that number. If the square root is not found, the mid-point is updated. This is done till the result is found.
+
+Binary search runs in logarithmic time, in the worst case, making O(log n) comparisons, where n is the number of elements in the array (in our case, n is the input value). Binary search takes constant (O(1)) space, meaning that the space taken by the algorithm is the same for any number of elements in the array.
+
+Hence, Time Complexity is O(log n).
+Space Complexity is O(1).
+
+https://www.quora.com/What-is-the-time-complexity-of-binary-search
+https://en.wikipedia.org/wiki/Binary_search_algorithm
+https://www.khanacademy.org/math/algebra2/introduction-to-complex-numbers-algebra-2/the-imaginary-numbers-algebra-2/v/imaginary-roots-of-negative-numbers
