@@ -1,0 +1,9 @@
+explanation for problem_2:
+
+In this problem, we have to search for a target value in a rotated sorted array. The given array is sorted, but it is rotated at some random pivot point. 
+
+In order to find the target, the algorithm first finds the pivot point. The algorithm then does a binary search to find the target value.
+Binary search runs in logarithmic time in the worst case, making O(log n) comparisons, where n is the number of elements in the array. 
+Binary search takes constant (O(1)) space, meaning that the space taken by the algorithm is the same for any number of elements in the array.
+
+Time Complexity: O(log(n)) Space Complexity: O(1)
