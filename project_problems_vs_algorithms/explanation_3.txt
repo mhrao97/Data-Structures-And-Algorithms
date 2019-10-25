@@ -1,0 +1,11 @@
+explanation for problem 3:
+
+Problem 3: 
+Rearrange Array Elements so as to form two number such that their sum is maximum. Return these two numbers. You can assume that all array elements are in the range [0, 9]. The number of digits in both the numbers cannot differ by more than 1. You're not allowed to use any sorting function that Python provides and the expected time complexity is O(nlog(n)).
+
+The algorithm sorts the input array in descending order using merge sort. The algorithm then loops through the sorted array to form the two numbers. 
+
+Merge Sort is a stable sort which means that the same element in an array maintain their original positions with respect to each other. Overall time complexity of Merge sort is O(nLogn). It is more efficient as it is in worst case also the runtime is O(nlogn) The space complexity of Merge sort is O(n).
+
+https://en.wikipedia.org/wiki/Merge_sort
+
