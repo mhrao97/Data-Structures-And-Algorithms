@@ -1,0 +1,9 @@
+explanation for Problem 4:
+
+In this Dutch National Flag Problem, when given an input array consisting on only 0, 1, and 2, we are required to sort the array in a single traversal.
+
+For solving this, one of the ideas is to put 0 and 2 in their correct positions, which will make sure all the 1s are automatically placed in their right positions. The algorithm does this by swapping the positions in the array. This is all done in a single loop. The time complexity hence is O(n), where n is the size of the array.
+
+Space complexity is O(1), constant, since we are just swapping the items in the array. 
+Time Complexity O(n)
+Space Complexity O(1)
