@@ -1,0 +1,8 @@
+explanation for Problem 5:
+
+In this problem "Building a Trie in Python", the task is to create a Trie functionality to insert a word and finding the node which represents the prefix. 
+We need to add the ability to list suffixes to implement our autocomplete feature.
+ 
+The algorithm has a find method which finds the corresponding node to certain prefix. Starting from this node, it then iterates every single node and returns the ones that have "is_word: true". The time complexity here is O(n) and space complexity O(n) since the algorithm is iterating the entire sub-tree and storing the results in another array. n is the size of the sub-tree.
+
+I have included a png file showing the sample results.
