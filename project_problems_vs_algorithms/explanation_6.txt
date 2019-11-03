@@ -1,0 +1,7 @@
+explanation for Problem 6:
+In this problem of "Max and Min in a Unsorted Array", we will look for smallest and largest integer from a list of unsorted integers.
+
+The algorithm has two variables defined as min_int and max_int. The first element in the array is assigned to min_int, and the last element is assigned to max_int. Since we are searching for minimum and maximum in a given array, I am assuming the first element is minimum and last element is maximum. While iterating through the array, the algorithm checks for the next item if it is smaller than the min_int and also if the item is larger than the max_int. It then re-assigns min_int and max_int accordingly. This is achieved in one traversal and does not require additional space.
+Hence Time Complexity: O(n) 
+Space Complexity: O(1)
+
