@@ -1,0 +1,19 @@
+explanation for Problem_7:
+
+In the excercise "HTTPRouter using a Trie" we are going to implement an HTTPRouter like you would find in a typical web server using the Trie data structure.
+
+The solution algorithm has three classes defined - RouteTrie, RouteTrieNode and Router. 
+
+RouteTrieNode initializes the Route handler, inserts into dictionary. It has a value, handler and reference to the next node. This next node implements the class RouteTrie. There are no loops. Hence, the time complexity for this class is O(1) and space complexity is also O(1) since it inserts a single element into the dictionary. 
+
+RouteTrie initializes the root node, inserts node. Insert method adds recursively. Find method navigates the Trie and returns a handler if a match is found. There is looping in this class, hence time complexity is O(n) where n is the number of paths the method loops through. Space complexity is O(n) where n is number of fragments; if there are no fragments in the trie, new node is inserted.
+
+Router initializes the root handler, adds handler, has a lookup method to find the handler in the parent and child paths. Time complexity is O(n) and space complexity is also O(n) where n is the number of handlers looked up and/or inserted.
+split_path splits the path into parts for both add handler and lookup functions. hence time complexity is O(n) where n is the string length. O(1) space complexity.
+
+Time Complexity for RouteTrieNode is O(1) and Space Complexity is O(1)
+Time Complexity for RouteTrie is O(n) and Space Complexity is O(n).
+Time Complexity for Router is O(n) and Space Complexity is O(n).
+
+Hence, overall Time Complexity is O(n) and Space Complexity is O(n).
+
