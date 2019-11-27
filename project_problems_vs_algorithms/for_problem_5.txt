@@ -1,0 +1,3 @@
+For Problem 5, we are to code in the workspace and download the notebook. The notebook uses Python widgets. When the notebook is re-opened, the code executed using the widgets do not show up, so the result space is blank.
+
+I have included the .ipynb and .py for Problem_5. I have taken a screen print of the executed code for the test cells. The image file is included with this submission.
